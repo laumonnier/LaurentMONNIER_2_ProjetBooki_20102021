@@ -1,0 +1,681 @@
+/*For the screen less than 768px*/
+
+main
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Raleway', sans-serif, Arial, 'Trebuchet MS'; 
+}
+
+/* Header */
+
+.navigation_block
+{
+    height: 170px;
+    border-bottom: 4px solid #0065fc;
+}
+
+.box_logo
+{
+    margin-top: 40px;
+    text-align: center; 
+}
+
+.navigation_block img
+{
+    width: 155px;
+    height: 75px;
+}
+
+.navigation_block ul
+{
+    display: flex;
+    list-style-type: none;
+    padding-top: 33px;
+}
+
+.navigation_block li
+{
+    text-align: center;
+    font-size: 21px;
+    font-weight: 100;
+    padding-bottom: 17px;
+    flex: 1;
+}
+
+#activity_active,#accommodation_active
+{   
+    text-decoration: none;
+    padding-bottom: 29px;
+}
+
+#activity_active
+{
+    color: black;
+}
+
+#accommodation_active
+{
+    margin-right: 20px;
+    color: #0065fc;
+}
+
+.bordure_active
+{
+    border-bottom: 2px solid #0065fc;
+}
+
+.bordure
+{
+    border-bottom: 5px solid #f2f2f2;
+}
+
+/* Section "search_block"*/
+#search_block
+{
+    padding: 35px 0 0 0;
+    margin: 0 25px;
+}
+
+.title_block h1
+{
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.title_block h2
+{
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+    /*Form*/
+    
+    form
+    {
+        margin: 30px 0;
+        background-color: #f2f2f2;
+        border-radius: 12px 0 0 12px;
+        height: 61px;
+        position: relative;
+        width: 85%;
+    }
+
+    form label
+    {
+       position: absolute;
+       left: 23px;
+       top: 23px; 
+    }
+
+    form .lieu
+    {
+        width: 85%;
+        font-weight: bold;
+        font-size: 18px;
+        padding-left: 15px;
+        position: absolute;
+        top: 2px;
+        height: 55px;
+        left: 60px;
+        border: none;
+    }
+
+    form .send
+    {
+        display: none;
+        position: absolute;
+        height: 36px;
+        left: 224px;
+        background-color: #0065fc;
+        color: white;
+        border-radius: 0 12px 12px 0;
+        border-color: #0065fc;
+    }
+
+    form .loupe
+    {
+        position: absolute;
+        color: white;
+        background-color: #0065fc;
+        border-radius: 12px 12px 12px 12px;
+        left: 97%; 
+    }
+
+    form .loupe i
+    {    
+        position: relative;
+        height: 62px;
+        width: 63px;
+        left: 23px;
+        top: 23px;
+    }
+
+    
+/*Filter*/
+
+.filter_box
+{
+    font-weight: bold;
+    line-height: 10px;
+}
+
+.filter_link
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    font-weight: bold;
+}
+
+.filter_link a
+{
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    border: 3px solid #f2f2f2;
+    border-left: none; 
+    padding: 0 10px 0 0;
+    margin: 0 14px 15px 0;
+    border-radius: 50px;
+}
+
+.filter_link a:hover
+{   
+    font-size: 15px;
+    color: #c21e19;
+    text-decoration: underline;
+    border: 3px solid #f2f2f2;
+    border-left: none;
+    padding: 0 10px 0 0;
+    margin: 0 14px 15px 0;
+    border-radius: 50px;
+}
+
+.filter_box p
+{
+    font-size: 18px;
+}
+
+.filter_link i
+{
+    margin-right: 9px;
+    color: #0065fc;
+    padding: 14px;
+    border-radius: 50px;
+    background-color: #deebff;
+}
+
+/*details before accommodations*/
+
+.details_of_accommodations
+{
+    display: flex;
+    align-content: flex-start;
+    align-items: baseline;
+}
+
+.info_details i
+{
+    color: #0065fc;
+    padding: 5px 10px 5px 10px;
+    border: 2px solid #f2f2f2;
+    border-radius: 50px;
+    overflow: visible;
+}
+
+.details
+{
+    font-size: 14px;
+    font-weight: lighter;
+    margin: 0 0 0 10px;
+}
+
+/* Main */
+/*Accommodations section*/
+
+#accommodation_block
+{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 30px;
+}
+
+.box_title
+{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 30px 0 22px 15px;
+}
+
+.card-price
+{
+    font-size: 14px;
+}
+
+.card-title
+{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/*accommodations_generals_block Part*/
+
+.accommodations_generals_block
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    margin: 0 15px;
+}
+
+.generals_block
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.see_more
+{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 12px 0 0 5px;
+}
+
+.see_more a
+{
+    text-decoration: none;
+    color: black;
+}
+
+/*generals_block part*/
+
+    /*General properties of generals accommodations*/
+
+    .generals_card
+    {
+        width: 90%;
+        height: 200px;
+        margin: 0 5% 5% 5%;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 1px 1px 15px black;
+        border: 5px solid white;
+    }
+
+    .generals_card:hover
+    {
+        width: 90%;
+        height: 200px;
+        margin-bottom: 5%;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 1px 1px 15px black;
+        border: 5px solid blue;
+    }
+
+    .generals_card .card-image img
+    {
+        width: 100%;
+        height: 120px;
+        border-radius: 15px 15px 0 0;
+        object-fit: cover;
+    }
+
+    .generals_card a
+    {
+        text-decoration: none;
+    }
+
+    .generals_card .card-body_box
+    {   
+        color: black;
+        padding-left: 10px;
+        padding-bottom: 20px;
+        box-sizing: border-box;
+        text-align: left;
+        line-height: 5px;
+    }
+
+    .generals_card .card-note
+    {
+        display: flex;
+    }
+
+/*Generals accommodations*/
+/*"Auberge La Cannabière" accommodation*/
+.cannebiere_card .card-note .first_star,.second_star,.third_star,.fourth_star 
+{
+    color: #0065fc;
+}
+
+.cannebiere_card .card-note .fith_star
+{
+    color: #f2f2f2;
+}
+
+/*"Hôtel du port" accommodation*/
+.port_card .card-note i 
+{
+    color: #0065fc;
+}
+
+/*"Hôtel Les mouettes" accommodation*/
+.mouette_card .card-note .first_star,.second_star,.third_star,.fourth_star 
+{
+    color: #0065fc;
+}
+.mouette_card .card-note .fith_star
+{
+    color: #f2f2f2;
+}
+
+/*"Hôtel de la mer" accommodation*/
+.mer_card .card-note .first_star,.second_star,.third_star 
+{
+    color: #0065fc;
+}
+.mer_card .card-note .fourth_star,.fith_star
+{
+    color: #f2f2f2;
+}
+
+/*"Auberge Le Panier" accommodation*/
+.panier_card .card-note .first_star,.second_star,.third_star,.fourth_star 
+{
+    color: #0065fc;
+}
+.panier_card .card-note .fith_star
+{
+    color: #f2f2f2;
+}
+
+/*"Hôtel chez Amina" accommodation*/
+.amina_card .card-note i 
+{
+    color: #0065fc;
+}
+
+/*"accommodations_famous_block" Part */
+.accommodations_famous_block
+{
+    background-color: #f2f2f2;
+    padding: 0 12px;
+}
+
+.famous_block_title
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-right: 1%;
+}
+
+.famous_block_title i
+{
+    font-size: 20px;
+}
+
+.famous_block
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/*famous_block part*/
+
+    /*General properties of famous accommodations*/
+    .famous_card
+    {
+        width: 90%;
+        height: 150px;
+        margin: 0 5% 5% 5%;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 1px 1px 15px black;
+        border: 5px solid white;
+    }
+
+    .famous_card:hover
+    {
+        width: 90%;
+        height: 150px;
+        margin: 0 5% 5% 5%;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 1px 1px 15px black;
+        border: 5px solid blue;
+    }
+
+    .famous_card .card-image img
+    {
+        width: 43%;
+        height: 150px;
+        border-radius: 15px 0 0 15px;
+        object-fit:cover;
+        float: left;
+    }
+
+    .famous_card a
+    {
+        text-decoration: none;
+    }
+
+    .famous_card .card-body_box
+    {
+        color: black;
+        padding-top: 1%;
+        padding-left: 48%;
+        padding-bottom: 11%;
+        box-sizing: border-box;
+        text-align: left;
+        line-height: 15px;
+    }
+    .famous_card .card-body_box:hover
+    {
+        color: black;
+        padding-top: 1%;
+        padding-left: 48%;
+        padding-bottom: 11%;
+        box-sizing: border-box;
+        text-align: left;
+        line-height: 15px;
+    }
+
+    .famous_card .card-note
+    {
+        display: flex;
+        padding-top: 31px;
+    }
+/*Famous accommodations*/
+
+/*"Hôtel Le soleil du matin" accommodation*/
+.hotel_soleil_card .card-note i 
+{
+    color: #0065fc;
+}
+
+/*"Au coeur de l'eau" accommodation*/
+.coeur_eau_card .card-note .first_star,.second_star,.third_star,.fourth_star 
+{
+    color: #0065fc;
+}
+.coeur_eau_card .card-note .fith_star
+{
+    color: #f2f2f2;
+}
+
+/*"Hôtel Tout bleu et blanc" accommodation*/
+.bleu_blanc_card .card-note .first_star,.second_star,.third_star,.fourth_star 
+{
+    color: #0065fc;
+}
+.bleu_blanc_card .card-note .fith_star
+{
+    color: #f2f2f2;
+}
+
+/*aside block*/
+
+#activities
+{
+    margin-top: 60px;
+}
+
+/*General properties of aside*/
+.activity_block_title
+{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px 0 30px 20px;
+}
+
+/*activity_block*/
+    /*General properties of activities*/
+    .activity_card .card-title
+    {
+        color: black;
+        font-weight: bold;
+        font-size: 16px;
+        padding-left: 3%;
+    }
+
+    .activity_block
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 15px;
+    }
+
+    .activity_card
+    {
+        box-sizing: border-box;
+        text-align: left;
+        margin-bottom: 5%;
+        border-radius: 20px;
+        box-shadow: 1px 1px 15px black;
+    }
+
+    .activity_box_two
+    {   
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .activity_box_four
+    {   
+        width: 90%;
+        display: flex;
+        margin-bottom: 5%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+
+/*Properties of big card*/
+.big_card
+{
+    width: 90%;
+    height: 200px;
+}
+
+.big_card .card-image img
+{
+    width: 100%;
+    height: 145px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+/*Properties of medium card*/
+.medium_card
+{
+    width: 100%;
+    height: 200px;
+    padding-bottom: 5%;
+}
+
+.medium_card .card-image img
+{
+    width: 100%;
+    height: 145px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+/*Properties of small card*/
+.small_card
+{
+    width: 100%;
+    height: 200px;
+    padding-bottom: 5%;
+}
+
+.small_card .card-image img
+{
+    width: 100%;
+    height: 145px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+/* Footer */
+footer
+{
+    margin-top: 4%;
+    background-color: #f2f2f2;
+}
+
+#bottom
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content:flex-start;
+    padding: 30px 0 10px 0;
+    margin-left: 7%;
+}
+
+footer .footer_title
+{
+    font-weight: bold;
+}
+
+.A_propos, .Accommodations, .Support
+{
+    margin-bottom: 30px;
+}
+
+footer ul
+{
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li
+{
+    list-style-type: none;
+    line-height: 30px;
+}
+
+footer .footer_list
+{
+    font-weight: lighter;
+}
